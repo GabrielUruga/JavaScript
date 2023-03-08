@@ -1,0 +1,36 @@
+<! DOCTYPE
+<html>
+<head>
+<title>Formulário de Soma</title>
+<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+<meta charset="utf-8">
+</head>
+
+<body>
+	<h3>Informe os valores para Soma</h3>
+
+<form name =FormSoma action="" method="post"> 
+	Insira o primeiro valor <input type = "text" name = f_n1> <p></p> 
+	Insira o segundo valor <input type ="text" name = f_n2><p></p>
+	<input type="button" name = "btn_soma" value = "Somar" onclick="soma()" />
+	<input type="button" name = "btn_reset" value = "Cancelar" /> 
+</form>
+
+<script language = "javascript">
+<!--
+	var js_n1;
+	var js_n2;
+	var js_nT;
+
+function soma() {
+	js_n1 = parseInt(document.FormSoma.f_n1.value);
+	js_n2 = parseInt(document.FormSoma.f_n2.value);
+
+	js_nT = js_n1+js_n2
+
+	window.alert("A soma de ambos é igual à "+js_nT);
+}
+//-->
+</script>
+</body>
+</html>
